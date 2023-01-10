@@ -79,7 +79,7 @@ ul li a{
 }
 .home-content{
 	text-align:center;
-	padding-top:25%;
+	padding:30% 0 20% 0;
 }
 .home-content h1{
 	color:white;
@@ -350,8 +350,6 @@ a {
 .container{
 	width:80%;
 	margin:0 auto;
-	display:flex;
-	justify-content:center;
 }
 .testimonial-img img{
 	width:100px !important;
@@ -422,12 +420,6 @@ a {
 	background-color:#ff4a17;
 	border-radius:5px;
 	padding:3px 5px 10px 5px;
-}
-.portfolio-row{
-	display:flex;
-}
-.portfolio-col-1{
-	width:33.33%;
 }
 .portfolio-col{
 	position:relative;
@@ -616,8 +608,8 @@ a {
 }	
 .contact-form{
 	box-shadow: 0 0 30px rgb(214 215 216 / 60%);
-    padding:40px;
 	line-height:50px;
+	padding:10px;
 	width:100%;
 }
 
@@ -849,7 +841,14 @@ ul li a:hover{
 			justify-content:center;
 			top:33%;
 		}
-								
+			
+
+							/*portfolio*/
+			
+		.portfolio-col-1{
+			width:100%;
+		}
+			
 							/*LOGO SECTION*/
 		.logo-1{
 			width:100%;
@@ -873,24 +872,20 @@ ul li a:hover{
 		}
 		.input-contact input{
 			width:100%;
-			height:40px;
+			padding:10px;
 		}
 		.sub-contact input{
 			width:100%;
-			height:40px;
+			padding:10px;
 		}
 		.msg-contact{
 			padding:10px 0 0 0;
 		}
 		.msg-contact textarea{
 			width:100%;
-			height:130px;
 		}	
 		.ct-fm{
 			width:100%;
-			padding:10px;
-		}
-		.contact-form{
 			padding:10px;
 		}
 		.footer-sec-1{
@@ -970,6 +965,17 @@ ul li a:hover{
 		.logo-1{
 			width:50%;
 		}
+		
+									/*portfolio*/
+		.portfolio-row{
+			display:flex;
+			flex-wrap:wrap;
+		}	
+		.portfolio-col-1{
+			width:50%;
+		}
+		
+		
 								/*TEAM SECTION*/
 		.team-section{
 			display:flex;
@@ -985,9 +991,6 @@ ul li a:hover{
 		}
 		.call{
 			width:100%;
-		}
-		.contact-form{
-			padding:40px;
 		}
 		.text-1{
 			width:100%;
@@ -1082,6 +1085,13 @@ ul li a:hover{
 		.logo-1{
 			width:16.65%;
 		}
+			
+									/*portfolio*/
+			
+		.portfolio-col-1{
+			width:33.33%;
+		}
+		
 									/*TEAM SECTION*/
 		.team-section{
 			display:flex;
