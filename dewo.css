@@ -19,13 +19,13 @@ h1 a{
 	border:1px solid #060606d1;
 	position:fixed;
 	top:0;
-	z-index:2;
+	z-index:20;
 }
 .nav-logo{
-	padding:34px 0px 20px 0px;
+	padding:15px 0px 20px 0px;
 }
 .navigation{
-	padding:30px 0px 25px 0px;
+	padding:18px 0px 15px 0px;
 }
 .navigation nav ul{
 	display:flex;
@@ -38,6 +38,8 @@ nav ul li{
 ul li a{
 	text-decoration:none;
 	color:#ede9e9f7;
+	font-size:15px;
+	font-weight:500;
 }
 .hvr-uline::after{
 	content:"";
@@ -65,6 +67,7 @@ ul li a{
 	background-color:#ff4a17;
 	border:2px solid #ff4a17;
 	color:white;
+	transition:0.5s ease-in-out;
 }
 									/*HOME SECTION*/
 .hero-bg-img{
@@ -118,10 +121,11 @@ ul li a{
     color: #fff;
 	background:#44444473;
     border: 2px solid #fff;
+	transition:0.5s ease-in-out;
 }
 .watch-video{
 	color:white;
-	padding:0 0 5px 5px;
+	padding-left:10px;
 }
 a {
     color: #ff4a17;
@@ -130,17 +134,18 @@ a {
 .circle{
 	font-size:30px;
 	color:white;
+	margin-left:10px;
 }
 .circle:hover{
-	font-size:30px;
 	color:#ff4a17;
+	transition:0.5s ease-in-out;
 }
 										/*ABOUT SECTION*/
 .padding{
 	padding:50px 0;
 }
 .container{
-	width:80%;
+	width:90%;
 	margin:0 auto;
 }	
 .about-section{
@@ -159,12 +164,13 @@ a {
 	color:#a1bdd1;
 }
 .about-content{
-	padding:0px 0 0 10px;
+	padding:5px;
 }
 .about-num{
 	font-weight:800;
+	font-size:25px;
 }
-.about-content p{
+.happy{
 	font-size:20px;
 }
 .about-image{
@@ -231,7 +237,8 @@ a {
 }
 .about-para p{
 	padding-top:15px;
-}	
+}
+	
 								/*ABOUT SECTION-2*/
 .abt-wholecont{
 	padding:30px 0 20px 0;
@@ -278,6 +285,100 @@ a {
 .aboutbox-2:hover i, .aboutbox-2:hover p{
 	color:#ff4a17;
 }
+
+
+
+
+
+.about-boxes {
+  background: url("img/about-boxes-bg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 30px 0;
+  position: relative;
+}
+
+.about-boxes::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+.about-boxes .container,
+.about-boxes .container-fluid {
+  position: relative;
+  z-index: 10;
+}
+
+.about-boxes .card {
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.about-boxes .card-icon {
+  text-align: center;
+  margin-top: -32px;
+}
+
+.about-boxes .card-icon i {
+  font-size: 32px;
+  color: #fff;
+  width: 64px;
+  height: 64px;
+  padding-top: 5px;
+  text-align: center;
+  background-color: #ff4a17;
+  border-radius: 4px;
+  text-align: center;
+  border: 4px solid #fff;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.about-boxes .card-body {
+  padding-top: 12px;
+}
+
+.about-boxes .card-title {
+  font-weight: 700;
+  text-align: center;
+}
+
+.about-boxes .card-title a {
+  color: #15222b;
+  text-decoration:none;
+}
+
+.about-boxes .card-title a:hover {
+  color: #ff4a17;
+}
+
+.about-boxes .card-text {
+  color: #5e5e5e;
+}
+
+.about-boxes .card:hover .card-icon i {
+  background: #fff;
+  color: #ff4a17;
+}
+
+@media (max-width: 1024px) {
+  .about-boxes {
+    background-attachment: scroll;
+  }
+}
+
+
+
+
+
+
 								/*PLAN SECTION*/
 .our-content{
 	padding:50px 10px;
@@ -348,7 +449,7 @@ a {
     background-size: cover;
 }								
 .container{
-	width:80%;
+	width:90%;
 	margin:0 auto;
 }
 .testimonial-img img{
@@ -378,6 +479,9 @@ a {
 .portfolio-content h4{
 	color:#0000ff75;
 	position:relative;
+}
+.aboutbox-1 a, .aboutbox-2 a{
+	text-decoration:none;
 }
 .portfolio{
 	padding:40px 0;
@@ -557,6 +661,10 @@ a {
 	display:inline-block;
 	padding:2px;
 }
+.team-contact-3 a i:hover, .team-contact-2 a i:hover, .team-contact-1 a i:hover{
+	color:#ff4a17;
+	transition:0.5s ease-in-out;
+}
 .cto i{
 	padding:5px;
 }
@@ -638,6 +746,12 @@ a {
 .address p, .mail p, .call p{
 	color:grey;
 }	
+.text-1 input,.text-2 input{
+	height:40px;
+}
+.msg-contact textarea{
+	height:100px;
+}
 .address{
     text-align: center;
     box-shadow: 0 0 30px rgb(214 215 216 / 60%);
@@ -658,6 +772,7 @@ a {
 	color:white;
 	display:inline-block;
 	padding-left:10px;
+	text-decoration:none;
 }
 
 
@@ -757,6 +872,7 @@ ul li a:hover{
 	height:40px;
 	text-align:center;
 	padding-top:8px;
+	text-decoration:none;
 }	
 .copy-bg-clr{
 	background-color:black;
@@ -765,6 +881,9 @@ ul li a:hover{
 	color:white;
 	text-align:center;
 	padding:50px;
+}
+.copyright b a {
+	text-decoration:none;
 }	
 							/*GOTOTOP*/
 .gototop{
