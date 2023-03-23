@@ -36,17 +36,29 @@
 							
 						</nav>
 						<div class="bars">
-							<i class="fa fa-bars" style="color:white;"></i>
+							<i class="fa fa-bars" style="color:white;" id="burger-icon"></i>
+											<!-- MOBILE SCREEN NAV-BAR -->
+								<div class="menu-bar">
+									<div class="drop-bar">
+											<a href="#home" class="hvr-uline gosec-1">HOME</a>
+											<a href="#about" class="hvr-uline gosec-2">ABOUT</a>
+											<a href="#services" class="hvr-uline gosec-3">SERVICES</a>
+											<a href="#portfolio" class="hvr-uline gosec-4">PORTFOLIO</a>
+											<a href="#team" class="hvr-uline gosec-5">TEAM</a>
+											<a href="#dropdown" class="hvr-uline gosec-6">DROPDOWN</a>
+											<a href="#contact" class="hvr-uline gosec-7">CONTACT</a>
+									</div>
+								</div>
 						</div>
 					</div>
 				</div>
 			</header>
 			
 							<!--HOME SECTION-->
-			<section class="hero-bg-img">
-				<div class="contaner">
+			<section class="hero-bg-img" id="gototop">
+				<div class="contaner" id="home">
 				
-					  <div class="home-content" id="home">
+					  <div class="home-content">
 						<h1>PLAN.LAUNCH.GROW.</h1>
 						 <p>We are team of talented designers making websites with Bootstrap</p>
 						 
@@ -65,9 +77,9 @@
 			
 				
 													<!--ABOUT SECTION-->
-			<section class="padding">
+			<section class="padding" id="about">
 				<div class="container">
-				   <div class="about-section" id="about">
+				   <div class="about-section">
 					<div class="about-icon">
 						<div class="bi-icon">
 							<i class="bi bi-emoji-smile"></i>
@@ -170,7 +182,7 @@
 								
 													<!--LOGO SECTION-->
 												
-			<section class="logo">
+			<!-- <section class="logo">
 				<div class="container">
 					<div class="logo-section">
 						<div class="logo-row">
@@ -207,7 +219,41 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
+
+			<section id="clients" class="clients">
+				<div class="container" data-aos="zoom-in">
+		  
+				  <div class="row">
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-1.png" class="img-fluid" alt="">
+					</div>
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-2.png" class="img-fluid" alt="">
+					</div>
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-3.png" class="img-fluid" alt="">
+					</div>
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-4.png" class="img-fluid" alt="">
+					</div>
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-5.png" class="img-fluid" alt="">
+					</div>
+		  
+					<div class="col-lg-2 col-md-4 col-sm-12 p-2 d-flex align-items-center justify-content-center">
+					  <img src="img/clients/client-6.png" class="img-fluid" alt="">
+					</div>
+		  
+				  </div>
+		  
+				</div>
+			  </section>
 			
 								<!--ABOUT SECT-2-->
 			<section class="about-bx-2">
@@ -269,11 +315,11 @@
 
 					<!--==========SERVICES SECTION==========-->
 						
-			<section class="serivce-bg-color">
+			<section class="serivce-bg-color" id="services">
 				<div class="container">
 					<div class="services">
 					<div class="ser-cont">
-						<div class="service-content" id="services">
+						<div class="service-content">
 							<h4>SERVICES</h4>
 							<h1>CHECK OUR SERVICES</h1>
 						</div>
@@ -423,9 +469,9 @@
 			
 												<!--PORTFOLIO SECTION-->
 			<section>
-				<div class="container">
+				<div class="container" id="portfolio">
 					<div class="portfolio">
-					<div class="portfolio-content" id="portfolio">
+					<div class="portfolio-content">
 						<h4>PORTFOLIO</h4>
 						<h1>CHECK OUR PORTFOLIO</h1>
 					</div>	
@@ -583,10 +629,10 @@
 			</section>
 			
 											<!--==========TEAM SECTION=========-->
-			<section class="team-bg-color">
+			<section class="team-bg-color" id="team">
 			<div class="container">
 				<div class="our-team-section">
-					<div class="service-content" id="team">
+					<div class="service-content">
 							<h4>TEAM</h4>
 							<h1>CHECK OUR TEAM</h1>
 						</div>
@@ -669,9 +715,9 @@
 		</section>								
 									<!--CONTACT SECTION-->
 			<section>
-				<div class="container">
+				<div class="container" id="contact">
 					<div class="contact-section">
-						<div class="contact-content" id="contact">
+						<div class="contact-content">
 							<h4>CONTACT</h4>
 							<h1>CONTACT US</h1>
 						</div>
@@ -719,7 +765,7 @@
 									<input type="text" placeholder="Subject">
 								</div>
 								<div class="msg-contact">
-									<textarea placeholder="Message" rows="7" cols="7"></textarea>
+									<textarea placeholder="Message" rows="7" cols="7" style="padding: 0px 0px 0px 10px;"></textarea>
 								</div>
 								<div class="contact-btn">
 									<a href="">Send Message</a>
