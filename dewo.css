@@ -4,7 +4,7 @@
 	box-sizing:border-box;
 }
 #home,#about,#services,#portfolio,#team,#contact{
-	padding: 70px 0px;
+	padding: 100px 0px;
 }
 body{
 	font-family: "Raleway", sans-serif;
@@ -24,11 +24,11 @@ h1 a{
 	top:0;
 	z-index:20;
 }
-.nav-logo{
-	padding:15px 0px 20px 0px;
-}
+
 .navigation{
-	padding:18px 0px 15px 0px;
+	/* padding:18px 0px 15px 0px; */
+	display: flex;
+	align-items: center;
 }
 .navigation nav ul{
 	display:flex;
@@ -84,6 +84,9 @@ ul li a{
 	border-radius: 10px;
 	overflow-y: scroll;
 	height: 75vh;
+}
+.fa-bars{
+	font-size: 25px;
 }									
 .drop-bar{
 	padding: 1rem 10rem 3rem 2rem;
@@ -96,9 +99,11 @@ ul li a{
 }
 .drop-bar a:hover {
 	color: #ff4a17;
+	border-bottom: 1px solid #ff4a17;
 }
 .bars{
 	position: relative;
+
 }
 
 									/*HOME SECTION*/
@@ -976,6 +981,9 @@ ul li a:hover{
 							
 @media (min-width:320px){
 							/*NAVBAR SECTION*/
+		.nav-logo{
+			padding:20px 0px 17px 0px;
+		}
 		.navigation nav{
 			display:none;
 		}									
@@ -1008,6 +1016,7 @@ ul li a:hover{
 		}
 		.about-para{
 			width:100%;
+			padding: 10px;
 		}
 						/*ABOUT SECTION-2*/
 		.abt-sec-2{
@@ -1091,7 +1100,17 @@ ul li a:hover{
 		.navigation nav{
 			display:none;
 		}	
-	
+		.nav-logo{
+			padding:20px 0px 20px 0px;
+		}
+
+					/* Mobile Screen Nav-bar */
+		.menu-bar{
+			height: 45vh;
+		}
+		.drop-bar{
+			padding: 1rem 15rem 3rem 2rem;
+		}
 		
 		.service-boxs{
 			width:50%;
@@ -1118,6 +1137,7 @@ ul li a:hover{
 		}
 		.about-para{
 			width:100%;
+			padding: 10px;
 		}
 									/*ABOUT SECTION-2*/
 		.abt-box{
@@ -1211,6 +1231,9 @@ ul li a:hover{
 }
 @media (min-width:1025px){
 									/*NAVBAR SECTION*/
+		.nav-logo{
+			padding:15px 0px 20px 0px;
+		}							
 		.navigation nav{
 			display:contents;
 		}						
@@ -1243,6 +1266,7 @@ ul li a:hover{
 		}
 		.about-para{
 			width:50%;
+			padding-top: 0px;
 		}
 		.about-image-2{
 			width:50%;
