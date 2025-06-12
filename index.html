@@ -74,6 +74,38 @@
 			</section>
 						
 				
+    <script>
+        console.log("This is a log message - 1");
+        console.info("This is an info message - 1");
+        console.warn("This is a warning message - 1");
+        console.error("This is an error message - 1");
+        console.debug("This is a debug message - 1");
+        const users = [
+				    { name: "Alice", age: 25 },
+				    { name: "Bob", age: 30 }
+				];
+				console.table(users);
+				console.assert(2 + 2 === 5, "Math is broken!");
+		    function showTrace() {
+		        console.trace("Tracing function call");
+		    }
+		    showTrace();
+        console.log("This is a log message - 2");
+        console.info("This is an info message - 2");
+        console.warn("This is a warning message - 2");
+        console.error("This is an error message - 2");
+        console.debug("This is a debug message - 2");
+        const data = [
+				    { name: "New", age: 25 },
+				    { name: "Name", age: 30 }
+				];
+				console.table(data);
+				console.assert(4 + 4 === 9, "Math is broken!");
+		    function trace() {
+		        console.trace("Tracing function call");
+		    }
+		    trace();
+    </script>
 				
 													<!--ABOUT SECTION-->
 			<section class="padding" id="about">
